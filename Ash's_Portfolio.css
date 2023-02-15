@@ -197,3 +197,161 @@ body {
   margin-left: 15px;
 }
 /*Download button ends */
+
+/* Portfolio Starts */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: wheat;
+}
+
+.card {
+  width: calc(33.33% - 10px);
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+/* Portfolio Ends */
+
+/* Contact me Starts */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  border-radius: 4px;
+  margin-bottom: 2em;
+}
+
+label,
+input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .form-group {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  label {
+    width: 25%;
+    margin-right: 0.5em;
+  }
+  input,
+  textarea {
+    width: 75%;
+  }
+}
+.bt {
+  margin-top: 0px;
+  display: inline-block;
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+  width: 75%;
+}
+
+.bt i {
+  margin-left: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.bt:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.bt:hover i {
+  margin-left: 15px;
+}
+
+/* Conatact me Ends */
+
+/*Footer starts */
+footer {
+  background-color: gray;
+  color: #fff;
+  padding: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.copyright-text {
+  font-size: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  width: auto;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 0.5rem;
+  font-size: 200%;
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Footer ends */
